@@ -1,0 +1,33 @@
+<h1> dota quotes </h1>
+
+<table>
+  <thead>
+    <tr>
+        <th>
+            posts
+        </th>
+        <th>
+            content
+        </th>
+
+    </tr>
+
+  </thead>
+
+<body>
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.title %> </td>
+      <td><%= post.content %> </td>
+      <td><%= link_to "show"%></td>
+     
+    </tr>
+    <% end %>
+
+
+
+
+</body>
+</table>
+
+<%= will_paginate %>
